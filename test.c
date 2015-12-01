@@ -8,5 +8,5 @@ int main(void)
 
 	printf("select the menu.\n");
 	printf("1. ");//menu
-
+	scanf("Select the menu\n");
 }
