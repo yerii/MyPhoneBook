@@ -47,4 +47,3 @@ void addToBST(char *name, char *phone, char *email, char *memo)
 	}
 	}
 }
-
