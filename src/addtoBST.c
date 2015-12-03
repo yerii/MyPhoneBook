@@ -28,17 +28,7 @@ void addToBST(char *name, char *phone, char *email, char *memo)
 				cur_node->right = new_node;
 				return;
 			}
-			cur_node = cur_node->left;
-		}
-
-		else if(strcmp(cur_node->name, new_node->name)<0)
-		{
-			if(cur_node->right==0)
-			{
-				cur_node->right=new_node;
-				return;
-			}
-			cur_node=cur_node->right;
+			cur_node = cur_node->right;
 		}
 		else
 		{
