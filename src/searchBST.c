@@ -1,3 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+struct node
+{
+	struct node *left;
+	struct node *right;
+	char name[20];
+	char phone[20];
+	char email[20];
+	char memo[50];
+};
+struct node *root = 0;
 struct node * searchBST(char *name)
 {
 	struct node *cur_node = root;
