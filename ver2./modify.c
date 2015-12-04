@@ -96,7 +96,7 @@ void CoverWrite(void)
 {
         struct sorting *temp = head;
         fclose(fp_save);
-        fopen_s(&fp_save,"phonebook.txt","wt");
+        FILE *fp_save = fopen("phonebook.txt","wt");
         while(temp != NULL)
         {
                 if(wcscmp(temp->connect->Name,L"none")!=0)
