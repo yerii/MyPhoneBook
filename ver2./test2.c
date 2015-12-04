@@ -221,7 +221,30 @@ int main(void)
 	fclose(fp_save);
 	return 0;
 }
+void Menu(void)
+{
+	int keyword;
+	printf("## Main function : Search(1), Add(2), Showall(3), Quit(4)\n");
+	scanf("%d",&keyword);
 
+	if(keyword == 1)
+	{
+		searchmenu();
+	}
+	else if(keyword == 2)
+	{
+		Add();
+	}
+	else if(keyword == 3)
+	{
+		Showall();
+	}
+	else if(keyword == 4)
+	{
+		return ;
+	}
+}
+/*
 void Menu(void)
 {
 	int k, n = 4;
@@ -258,6 +281,7 @@ void Menu(void)
 		}
 	}
 }
+*/
 // if file is empty, return -1; 
 struct node *findoverlap(int overlap)
 {
