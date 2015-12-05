@@ -12,6 +12,10 @@ struct node * searchBST(char *name)
 		{
 			cur_node = cur_node -> left;
 		}
+		else if(strcmp(cur_node->name,name)<0)
+		{
+			cur_node = cur_node -> right;
+		}
 		else
 		{
 			printf("");//every information....
