@@ -7,4 +7,4 @@ basic.o: basic.c test3.h
 test3.o: test.c test3.h
 	gcc -c -I. test3.c
 clean:
-	rm *.o *.a
+	rm *.o *.a main
