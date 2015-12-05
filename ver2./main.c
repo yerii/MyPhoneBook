@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
-struct node *root=0;
+#include <test3.h>
+//struct node *root = 0;
 int main(void)
 {
 
