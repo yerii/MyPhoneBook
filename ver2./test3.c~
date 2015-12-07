@@ -257,8 +257,8 @@ void Fadd(char *name, char *tel, char *mail, char *note)
          }
       }
    }
-}
 
+}
 void Fshow(struct node *node)
 {
    if(node == 0)
